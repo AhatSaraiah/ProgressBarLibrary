@@ -33,8 +33,6 @@ Add it in your root build.gradle at the end of repositories:
 
 https://img.shields.io/github/license/AhatSaraiah/ProgressBarLibrary
   
-Copyright 2020 Ahat Saraiah
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
