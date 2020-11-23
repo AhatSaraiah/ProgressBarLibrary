@@ -21,12 +21,18 @@ public class Progressbar extends RelativeLayout {
     private int styleAttr;
     private ImageView imageView;
     private Drawable imageFile;
-    private View view, progBg;
+    private View view, Progressbar;
     private TextView textMsg;
     private TextView loading;
     private int textColor, enlarge;
     private float textSize;
 
+
+
+    public Progressbar(Context context) {
+        super(context);
+        initView();
+    }
 
 
     public Progressbar(Context context, AttributeSet attrs) {
@@ -48,14 +54,14 @@ public class Progressbar extends RelativeLayout {
         this.view = this;
         inflate(mContext, R.layout.progressbar, this);
 
-        TypedArray arr = mContext.obtainStyledAttributes(attrs, R.styleable.ProgBar, styleAttr,0);
+        TypedArray arr = mContext.obtainStyledAttributes(attrs, R.styleable.Progressbar, styleAttr,0);
 
-        imageFile = arr.getDrawable(R.styleable.ProgBar_barImg);
-        textColor = arr.getColor(R.styleable.ProgBar_androidtextColor, Color.BLACK);
-        textSize = arr.getDimension(R.styleable.ProgBar_textSize, 16);
-        enlarge = arr.getInt(R.styleable.ProgBar_enlarge,4);
+        imageFile = arr.getDrawable(R.styleable.Progressbar_barImg);
+        textColor = arr.getColor(R.styleable.Progressbar_androidtextColor, Color.BLACK);
+        textSize = arr.getDimension(R.styleable.Progressbar_textSize, 16);
+        enlarge = arr.getInt(R.styleable.Progressbar_enlarge,4);
         imageView = findViewById(R.id.progressImg);
-        progBg = findViewById(R.id.progress_bg);
+        Progressbar = findViewById(R.id.progress_bg);
         textMsg = findViewById(R.id.text_msg);
         loading = findViewById(R.id.loading);
 
