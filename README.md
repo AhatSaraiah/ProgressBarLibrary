@@ -2,7 +2,7 @@
 A library for a custom progress bar 
 
 
-# 
+![ezgif com-crop](https://user-images.githubusercontent.com/46491791/100002727-a2ee3d80-2dcd-11eb-8840-3d76706ed618.gif)
 #  Setup
 
 To get a Git project into your build:
